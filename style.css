@@ -58,13 +58,14 @@ p {
 a {
   text-decoration: none;
   position: relative;
+  display: flex;
 }
 
 i {
-    transition: opacity 300ms ease;
+  transition: opacity 300ms ease;
 }
 i:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 li {
@@ -185,15 +186,15 @@ ABOUT ME
 }
 
 @keyframes animate-profile-picture {
-    0% {
-        transform: scale(0);
-    }
-    80% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
+  0% {
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .about-me__picture {
@@ -222,18 +223,19 @@ ABOUT ME
 }
 
 .about-me__links {
-    animation: fade-up 800ms 400ms backwards;
+  display: flex;
+  animation: fade-up 800ms 400ms backwards;
 }
 
 @keyframes fade-up {
-    0% {
-        opacity: 0;
-        transform: translateY(40px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 .about-me__img--container {
@@ -244,38 +246,38 @@ ABOUT ME
 
 .about-me__img {
   width: 100%;
-  animation: fade-over-shake 1200ms 400ms backwards ;
+  animation: fade-over-shake 1200ms 400ms backwards;
 }
 
 @keyframes fade-over-shake {
-    0% {
-        opacity: 0;
-        transform: translateX(-200px);
-    }
-    70% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-    85% {
-        transform: rotate(1.5deg);
-    }
+  0% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  70% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  85% {
+    transform: rotate(1.5deg);
+  }
 }
 
 .wave {
-    display: inline-block;
-    animation: animate-wave 350ms 14;
+  display: inline-block;
+  animation: animate-wave 350ms 14;
 }
 
 @keyframes animate-wave {
-    0% {
-        transform: rotate(0);
-    }
-    50% {
-        transform: rotate(30deg);
-    }
-    100% {
-        transform: rotate(0);
-    }
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
 }
 
 /* TECH STACK */
